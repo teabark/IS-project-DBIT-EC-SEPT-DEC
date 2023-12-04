@@ -1,0 +1,150 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#navbar {
+  background-color: #b28842;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1px solid blue;
+}
+
+#navbar img {
+  max-width: 100px;
+  height: auto;
+}
+
+/* #sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #cba973;
+  position: absolute;
+} */
+
+#sidebar {
+  width: 250px;
+  height: 100vh; /* Set initial height to full viewport height */
+  background-color: #cba973;
+  position: fixed;
+  overflow-y: auto; /* Allow vertical scrolling within the sidebar */
+}
+
+#content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+#menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  padding: 10px;
+  border-bottom: 1px solid #231b0d;
+}
+
+#menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #2cb34a;
+  /* Green color for Save */
+  color: #fff;
+  border: none;
+  /* border-radius: 5px; */
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.update-button {
+  background-color: #ffc107;
+  /* Amber color for Update */
+}
+
+.row {
+  margin: 20px;
+}
+
+.table-responsive {
+  padding: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #d1d3e2;
+}
+
+th {
+  background-color: #f8f9fc;
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert-danger a {
+  color: #721c24;
+  text-decoration: underline;
+}
+
+.trash-icon {
+  color: red;
+}
